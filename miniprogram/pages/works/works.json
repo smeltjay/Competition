@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "作品",
+  "usingComponents": {
+    "l-list": "../../dist/list/index",
+    "l-segment": "../../dist/segment/index",
+    "l-segment-item":"../../dist/segment-item/index",
+    "l-tabs": "../../dist/tabs/index",
+    "l-tabpanel": "../../dist/tabpanel/index",
+    "l-card":"../../dist/card/index"
+  }
+}

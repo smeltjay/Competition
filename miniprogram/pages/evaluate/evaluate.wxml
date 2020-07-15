@@ -1,0 +1,13 @@
+<view class="all">
+  <l-textarea bind:linblur="inputComment" indicator="{{true}}" maxlength="140" auto-height="{{true}}" placeholder="此处输入评论"  />
+  <button bindtap="commit">写评论</button>
+  <block wx:for="{{newList}}" wx:key='_id'>
+    <view class="top_label">
+      <view class="comment_name">{{item.name}}</view>
+      <!-- <view class="comment_time">2020-05-02</view> -->
+    </view>
+    <view class="comment">
+      {{item.comment}}
+    </view>
+  </block>
+</view>

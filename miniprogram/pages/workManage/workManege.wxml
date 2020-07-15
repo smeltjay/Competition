@@ -1,0 +1,42 @@
+      <l-tabs scrollable="true">
+        <!-- 全部作品 -->
+        <l-tabpanel tab="全部" key="two" slot="two">
+          <view class="tab-content" wx:for="{{newList}}" wx:key="_id">
+            <navigator url="../../pages/details/details?number={{item.number}}">
+             <l-card type="primary" 
+                image="{{item.path}}"
+                title="作品名：{{item.workName}}" >
+                <!-- 此处为content -->
+                <view class="content">    
+                  <view>选手：{{item.studentName}}</view>
+                  <view>学校：{{item.schoolName}}</view>          
+                  <view>作品类别：{{item.workType}}</view>
+                </view>
+              </l-card>
+            </navigator>
+            <view class="operation">
+                <button data-name="{{item.workName}}" bindtap="delete">删除</button>
+                <navigator url="../../pages/workChange/workChange?name={{item.workName}}">
+                  <button>修改</button> 
+                </navigator>
+            </view>
+            </view>
+        </l-tabpanel>
+        <!-- 往期作品 -->
+        <l-tabpanel tab="往期作品" key="three" slot="three">
+          <view class="tab-content" wx:for="{{oldList}}" wx:key="_id">
+          <navigator url="../../pages/formerDetails/formerDetails?number={{item.number}}">
+             <l-card type="primary" 
+                image="{{item.ids}}"
+                title="作品名：{{item.workName}}" >
+                <!-- 此处为content -->
+                <view class="content">    
+                  <view>选手：{{item.studentName}}</view>
+                  <view>学校：{{item.schoolName}}</view>          
+                  <view>作品类别：{{item.workType}}</view>          
+                </view>
+              </l-card>
+            </navigator>
+            </view>
+        </l-tabpanel>
+      </l-tabs>

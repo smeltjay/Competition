@@ -1,0 +1,18 @@
+ <view wx:for="{{newList}}" wx:key="_id">
+  <navigator url="../../pages/details/details?number={{item.workID}}&&flag={{isAppeal}}">
+  <block wx:if="{{item.isAppeal}}">
+    <l-card type="primary"
+            plaintext="{{true}}"
+            title="申诉人：{{item.name}}">
+      <view class="content">
+        <view>作品名：{{item.workName}}</view>
+        <view>作品编号：{{item.workID}}</view>
+        <view>申诉原因：{{item.reason}}</view>
+      </view>
+    </l-card>
+  </block>
+
+  </navigator>
+ 
+</view>
+

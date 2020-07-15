@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "个人服务",
+  "usingComponents": {
+    "l-list": "../../dist/list/index",
+    "i-button":"../../dist/button/index"
+  }
+}

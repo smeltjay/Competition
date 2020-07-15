@@ -1,0 +1,100 @@
+.top_image{
+  display: flex;
+  height: 80vw;
+  justify-content: center;
+  align-items: center;
+  background-color:white;
+}
+.top_image image{
+  width: 75%;
+  height: 75%;
+}
+.work_one{
+  display: flex;
+  padding: 50rpx 10rpx 50rpx 10rpx;
+  justify-content: space-between;
+  border-bottom: solid 1rpx #BDBDBD;
+  color: red;
+  font-size: larger;
+}
+.works_name_row{
+  display: flex;
+  height: 100rpx;
+  border-bottom: 1rpx solid #BDBDBD;
+
+}
+.works_name{
+  flex:7;
+  font-size: 35rpx;
+  padding: 10rpx;
+
+}
+.collect{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1rpx solid #BDBDBD;
+}
+.collect image{
+  width: 50%;
+  height: 50%;
+}
+.works_two{
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx;
+  border-bottom: solid 20rpx #BDBDBD;
+}
+.name{
+  flex:5
+}
+.school{
+  flex:5
+}
+.grade{
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx;
+  border-bottom: solid 1rpx #BDBDBD;
+}
+.list{
+  padding: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1rpx #BDBDBD;
+}
+.all{
+  color: #BDBDBD;
+}
+.evaluate_a{
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1rpx #BDBDBD;
+}
+.top{
+  padding: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.right_top{
+  font-size: small;
+  color:#BDBDBD;
+}
+.bottom{
+  padding: 10rpx;
+}
+.right_top2{
+  display: flex;
+}
+.btn {
+  width: 50%;
+  margin-top: 5rpx;
+  background-color: beige;
+  color:blue;
+  border-radius: 98rpx;
+  font-size: smaller;
+  font-weight: 100;
+}

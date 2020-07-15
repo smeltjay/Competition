@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "赛事安排",
+  "usingComponents": {
+    "l-card":"../../dist/card/index"
+  }
+}

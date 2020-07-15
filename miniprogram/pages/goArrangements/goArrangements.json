@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "发布赛事",
+  "usingComponents": {
+    "l-input":"../../dist/input/index",
+    "i-button":"../../dist/buttons/index",
+    "i-input":"../../dist/inputs/index",
+    "l-textarea":"../../dist/textarea/index"
+  }
+}

@@ -1,0 +1,10 @@
+.all{
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx;
+}
+.first{
+  display: flex;
+  padding: 10rpx;
+  border-bottom: rgb(207, 227, 243) solid 1rpx;
+}

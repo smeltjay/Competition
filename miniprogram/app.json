@@ -1,0 +1,81 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/works/works",
+    "pages/user/user",
+    "pages/uploadworks/uploadworks",
+    "pages/register/register",
+    "pages/login/login",
+    "pages/goArrangements/goArrangements",
+    "pages/tips/tips",
+    "pages/goTips/goTips",
+    "pages/filed/filed",
+    "pages/storageConsole/storageConsole",
+    "pages/arrangements/arrangements",
+    "pages/former/former",
+    "pages/details/details",
+    "pages/grade/grade",
+    "pages/evaluate/evaluate",
+    "pages/chart/chart",
+    "pages/getWeather/getWeather",
+    "pages/map/map",
+    "pages/formerDetails/formerDetails",
+    "pages/test/test",
+    "pages/adLogin/adLogin",
+    "pages/informationManagement/informationManagement",
+    "pages/userManage/userManage",
+    "pages/workManage/workManege",
+    "pages/workChange/workChange",
+    "pages/dataChart/dataChart",
+    "pages/appeal/appeal",
+    "pages/auditing/auditing",
+    "pages/doComment/doComment",
+    "pages/chartA/chartA",
+    "pages/chartB/chartB",
+    "pages/chartC/chartC",
+    "pages/chartD/chartD",
+    "pages/join/join"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#2E64FE",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "赛事通",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#2E64FE",
+    "selectedColor": "#2E64FE",
+    "borderStyle": "white",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "pages/homepage/homepage",
+        "iconPath": "images/12.png",
+        "selectedIconPath": "images/11.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/works/works",
+        "iconPath": "images/32.png",
+        "selectedIconPath": "images/31.png",
+        "text": "作品"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/42.png",
+        "selectedIconPath": "images/41.png",
+        "text": "个人服务"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

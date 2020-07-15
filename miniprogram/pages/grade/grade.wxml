@@ -1,0 +1,8 @@
+<view>
+{{number}}
+   <i-input  bind:change='inputCreativity' maxlength="15" title="作品创意" placeholder="请给出创意分数" />
+    <i-input  bind:change='inputTechnology' maxlength="15" title="作品技术"  placeholder="请给出作品技术分数" />
+    <i-input  bind:change='inputAppearance' maxlength="15" title="外观"  placeholder="请给出外观分数" />
+    <i-input  bind:change='inputStyle' maxlength="15" title="作品特色"  placeholder="请给出作品特色分数" />
+    <i-button  bindtap='commitInformation' type="primary">提交</i-button>
+</view>

@@ -1,0 +1,33 @@
+   <l-card type="primary"
+          plaintext="{{true}}">
+    <view class="content">
+      <view class="first">
+        <view class="front">作品名:</view>
+        <input bindinput="workNameInput" value="{{workName}}"></input>
+      </view>
+      <view class="first">
+        <view class="front">作者:</view>
+        <view class="behind">
+        <input bindinput="studentNameInput" value="{{studentName}}"></input>
+        </view>
+      </view>
+      <view class="first">
+        <view class="front">学校:</view>
+        <view class="behind">
+        <input bindinput="schoolNameInput" value="{{schoolName}}"></input>
+        </view>
+      </view>
+      <view class="first">
+        <view class="front">作品类型:</view>
+        <view class="behind">
+        <input bindinput="workTypeInput" value="{{workType}}"></input>
+        </view>
+      </view>
+    </view>
+  </l-card>
+  <button bindtap="doUpdate">点击修改</button>
+   schoolName: {{schoolName}}
+   studentName: {{studentName}}
+    workName: {{workName}}
+   workStyle: {{workStyle}}
+    workType: {{workType}}

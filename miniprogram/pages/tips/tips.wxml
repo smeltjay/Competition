@@ -1,0 +1,10 @@
+ <view wx:for="{{newList}}" wx:key="_id">
+   <l-card type="primary"
+          plaintext="{{true}}"
+          title="温馨提醒">
+    <view class="content">
+      {{item.content}}
+    </view>
+  </l-card>
+</view>
+

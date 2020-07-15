@@ -1,0 +1,62 @@
+<!-- 作品详情页 -->
+<view class="top_image">
+  <image src="{{imageIds}}"></image>
+</view>
+<view class="work_one">
+  <view class="work_id">{{number}} #作品</view>
+  <block wx:if="{{flag}}">
+    <view class="work_share" bindtap="share">待审核</view>
+  </block>
+</view>
+<view class="works_name_row">
+  <view class="works_name">作品名称：{{workName}}</view>
+  <view>类别：{{workType}}</view>
+  <navigator class="collect">
+   <image src="../../images/shoucang.png"></image>
+  </navigator> 
+</view>
+<view class="works_two">
+  <view class="name">作者：{{studentName}}</view>
+  <view class="school">学校：{{schoolName}}</view> 
+  <view class="grades">综合得分：{{grades}}</view> 
+</view>
+<block wx:if="{{isAdmin}}">
+  <block wx:if="{{isGrade}}">
+    <block wx:if="{{flag}}">
+    <navigator class="grade" url="../../pages/grade/grade?number={{number}}">
+      <view class="do_grades">重新打分</view>
+      <view class="all">去打分>></view>
+    </navigator>
+  </block>
+  <block wx:else></block>
+  </block>
+  <block wx:else>
+    <navigator class="grade" url="../../pages/grade/grade?number={{number}}">
+      <view class="do_grades">我要打分</view>
+      <view class="all">去打分>></view>
+    </navigator>
+  </block>
+
+</block>
+
+<navigator class="list" url="../../pages/evaluate/evaluate?number={{number}}">
+  <view class="evaluate">作品评价</view>
+  <view class="all">查看全部>></view>
+</navigator>
+<view class="evaluate_a">
+    <view class="top">
+      <view class="left_top">张三</view>
+      <view class="right_top">2020-04-28</view>
+    </view>
+  <view class="bottom">赞赞赞！！！</view>
+</view>
+<view class="evaluate_a">
+    <view class="top">
+      <view class="left_top">作品简介：</view>
+      <view class="right_top2">
+        <button class="btn" size="mini" bindtap="openFile">查看详细文档</button>
+      </view>
+    </view>
+  <view class="bottom">{{workStyle}}</view>
+</view>
+

@@ -1,0 +1,8 @@
+<view>
+  <i-input bind:change='inputNumber' maxlength="15" title="赛事编号" placeholder="请输入赛事编号" />
+  <i-input bind:change='inputName' maxlength="15" title="赛事主题" placeholder="请输入赛事主题" />
+  <i-input bind:change='inputTime' maxlength="15" title="比赛时间"  placeholder="请输入比赛举办时间" />
+  <i-input bind:change='inputPlace' maxlength="15" title="比赛场地"  placeholder="请输入比赛举办场地" />
+  <l-textarea bind:linblur="inputComment" indicator="{{true}}" maxlength="140" auto-height="{{true}}" placeholder="此处输入详细赛事安排"  />
+  <button bindtap="commit">发布赛事</button>
+</view>

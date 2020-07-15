@@ -1,0 +1,58 @@
+<!-- 登陆页面 -->
+<view class="myLogin">
+  <block wx:if="{{isLogin}}">
+    <block wx:if="{{isAdmin}}">
+      <image src="../../images/administrator.jpg"></image>
+      <text>欢迎你，管理员{{userName}}</text>
+      <button bindtap="logOut">注销</button>
+    </block>
+    <block wx:else>
+      <image src="../../images/portrait.jpg"></image>
+      <block wx:if="{{isJud}}">
+        <text>欢迎你，组委会成员{{userName}}</text>
+        <button bindtap="logOut">注销</button>
+      </block>
+      <block wx:else>
+        <text>欢迎你，选手{{userName}}</text>
+        <button bindtap="logOut">注销</button>
+      </block>   
+    </block>
+  </block>
+<button wx:else bindtap="doLogin">未登录，点此登陆</button> -->
+
+</view>
+<block wx:if="{{isLogin}}">
+  <block wx:if="{{isAdmin}}">
+    <view style="listBox">
+      <l-list bind:lintap="doUser" gap="10" image="../../images/yonghu.png" title="用户信息管理"></l-list>
+      <l-list bind:lintap="onFiledClick" gap="10" image="../../images/changdi.png" title="场地查询"></l-list>
+      <l-list bind:lintap="doUpload" gap="10" image="../../images/zuopin.png "title="上传作品信息"></l-list>
+      <l-list bind:lintap="doWork" gap="10" image="../../images/zuopin.png "title="作品管理"></l-list>
+      <l-list bind:lintap="doUpload" gap="10" image="../../images/luntan.png "title="论坛管理"></l-list>
+      <l-list bind:lintap="doArrangements" gap="10" image="../../images/anpai.png" title="发布赛事安排"></l-list>
+      <l-list bind:lintap="doTips" gap="10" image="../../images/tixing.png" title="发布温馨提示"></l-list>
+      <l-list bind:lintap="doUploadFormer" gap="10" image="../../images/zuopin.png" title="上传往年优秀作品"></l-list>
+      <l-list bind:lintap="doChart" gap="10" image="../../images/tubiao.png" title="赛事数据管理"></l-list>
+      <l-list bind:lintap="doData" gap="10" image="../../images/jieguo.png" title="导入参赛结果"></l-list>
+      <l-list title="消息" icon="notification" />
+    </view>
+  </block>
+  <view wx:else style="listBox">
+    <navigator url="../../pages/informationManagement/informationManagement?name={{userName}}">
+      <l-list gap="10" image="../../images/geren.png" title="个人信息"></l-list>
+    </navigator>
+      
+      <l-list bind:lintap="onFiledClick" gap="10" image="../../images/changdi.png" title="场地查询"></l-list>
+      <block wx:if="{{isJud}}">
+          <l-list bind:lintap="doAuditing" gap="10" image="../../images/shenhe.png" title="成绩审核"></l-list> 
+          <l-list bind:lintap="doAppeal" gap="10" image="../../images/zuopin.png" title="作品评分"></l-list>         
+      </block>
+      <block wx:else>
+          <l-list bind:lintap="doAppeal" gap="10" image="../../images/shenhe.png" title="成绩申诉"></l-list>       
+          <l-list bind:lintap="doJoin" gap="10" image="../../images/shenhe.png" title="比赛报名"></l-list>       
+      </block>  
+      <l-list bind:lintap="doChart" gap="10" image="../../images/tubiao.png" title="赛事数据查询"></l-list>
+      <l-list title="消息" icon="notification" />
+    </view>
+
+</block>

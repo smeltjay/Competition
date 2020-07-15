@@ -1,0 +1,161 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"enhance": true
+	},
+	"appid": "wx300c862e3eba1b20",
+	"projectname": "competition",
+	"libVersion": "2.8.1",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "作品页",
+					"pathName": "pages/works/works",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "上传文件",
+					"pathName": "pages/uploadworks/uploadworks",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "详情页",
+					"pathName": "pages/details/details",
+					"query": "number=0",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "打分页面",
+					"pathName": "pages/grade/grade",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "2#评论页",
+					"pathName": "pages/evaluate/evaluate",
+					"query": "number=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "图表",
+					"pathName": "pages/chart/chart",
+					"query": "number=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "天气",
+					"pathName": "pages/getWeather/getWeather",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "场地查询",
+					"pathName": "pages/filed/filed",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人服务",
+					"pathName": "pages/user/user",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "测试",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/register/register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登录",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "用户管理",
+					"pathName": "pages/userManage/userManage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "赛事数据",
+					"pathName": "pages/dataChart/dataChart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "申诉",
+					"pathName": "pages/appeal/appeal",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "审核",
+					"pathName": "pages/auditing/auditing",
+					"scene": null
+				}
+			]
+		}
+	}
+}

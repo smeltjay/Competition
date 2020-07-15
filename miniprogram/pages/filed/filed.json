@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "场地查询",
+  "usingComponents": {
+    "l-card":"../dist/card/index"
+    
+  }
+}

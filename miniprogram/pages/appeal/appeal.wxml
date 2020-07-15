@@ -1,0 +1,10 @@
+<!--miniprogram/pages/appeal/appeal.wxml-->
+<view>请输入需申诉作品的信息</view>
+<view>
+  <i-input bind:change='inputWorkID' number='true' maxlength="15" title="作品编号" placeholder="请输入作品编号" />
+  <i-input bind:change='inputWorkName' maxlength="15" title="作品名" placeholder="请输入作品名" />
+  <i-input bind:change='inputStudentName' maxlength="15" title="选手姓名" placeholder="请输入选手姓名" />
+  <l-textarea bind:linblur="inputReason" indicator="{{true}}" maxlength="140" auto-height="{{true}}" placeholder="此处输入申诉理由..."  />
+  <view>{{reason}}</view>
+  <i-button bindtap='commitInformation' type="primary">提交</i-button>
+</view>

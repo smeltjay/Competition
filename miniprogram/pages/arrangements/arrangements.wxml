@@ -1,0 +1,17 @@
+
+  <view wx:for="{{newList}}" wx:key="_id">
+    <navigator url="../../pages/join/join?number={{item.number}}">
+      <l-card type="primary"
+          plaintext="{{true}}"
+          title="赛事主题：{{item.name}}">
+      <view class="content">
+        <view>比赛时间：{{item.time}}</view>
+        <view>比赛地点：{{item.place}}</view>
+        <view>赛事内容：{{item.content}}</view>
+      </view>
+      </l-card>
+    </navigator>
+  </view>
+
+
+

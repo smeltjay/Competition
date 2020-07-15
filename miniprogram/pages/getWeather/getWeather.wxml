@@ -1,0 +1,48 @@
+<!--pages/index/index.wxml-->
+<view class="root">
+    <image class='background-image' src='../../images/sun.jpg' mode="aspectFill"></image>
+     <view class="content">
+         <view class="top">
+            <picker class="loaction" mode='region' bindchange="changeRegion">
+              <view>{{region}}</view>
+            </picker>
+            <view class="temperature">
+              <text>{{now.tmp}}℃ {{now.cond_text}}</text>
+            </view>
+            <view class="state">
+              <view class="left">
+                <image wx:if='{{now.cond_code}}' src="/images/{{now.cond_code}}.png" mode="widthFix"></image>
+              </view>
+              <view class="left">{{now.cond_txt}}</view>
+            </view>
+          </view>
+          <view class="bottom1">
+            <view class="bottom-left">
+              <view class="title">风向</view>
+              <view class="contents">{{now.wind_dir}}</view>
+            </view>
+            <view class="bottom-left">
+              <view class="title">风速</view>
+              <view class="contents">{{now.wind_spd}}Km/h</view>
+            </view>
+            <view class="bottom-right">
+              <view class="title">风力</view>
+              <view class="contents">{{now.wind_sc}}级</view>
+            </view>
+          </view>
+          <view class="bottom2">
+            <view class="bottom-left">
+              <view class="title">湿度</view>
+              <view class="contents">{{now.hum}}%</view>
+            </view>
+            <view class="bottom-left">
+              <view class="title">气压</view>
+              <view class="contents">{{now.pres}}hPa</view>
+            </view>
+            <view class="bottom-right">
+              <view class="title">能见度</view>
+              <view class="contents">{{now.vis}}</view>
+            </view>
+          </view>
+     </view>
+</view>

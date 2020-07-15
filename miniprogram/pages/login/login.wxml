@@ -1,0 +1,23 @@
+<view>
+    <view class="all">
+        <navigator class="administrator" url="../../pages/adLogin/adLogin">
+            <image src="../../images/adminis1.png"></image>
+        </navigator>            
+    </view>
+    <view class="page__bd">
+        <view class="weui-cells weui-cells_after-title" >
+            <view class="find_result">
+            <view class="result_inner">
+                <i-input bind:change='inputName' maxlength="15" title="账号" placeholder="请输入账号" />
+                <i-input bind:change='inputPassword' type="password" maxlength="15" title="密码"  placeholder="请输入密码" />
+                
+                <i-button bindtap='contestantsLogin' type="primary">登录</i-button>
+                <!-- <i-button bindtap='administratorsLogin' type="primary">管理登录</i-button> -->
+                <i-button  class="aa" bindtap='register' type="success">注册</i-button>
+            </view>
+            </view>
+        </view>
+        </view>
+
+</view>
+

@@ -1,0 +1,7 @@
+<view class="all">
+  <view class="first">赛事主题：{{name}}</view>
+  <view class="first">赛事时间：{{time}}</view>
+  <view class="first">赛事地点：{{place}}</view>
+  <view class="first">赛事内容：{{content}}</view>
+</view>
+<button bindtap="join">我要报名</button>

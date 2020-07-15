@@ -1,0 +1,22 @@
+<view wx:for="{{newList}}" wx:key="_id">
+  <navigator url="../../pages/informationManagement/informationManagement?name={{item.name}}">
+    <l-card type="avatar" l-class="card"
+        title="{{item.name}}">
+            <!-- 此处为content -->
+            <view class="avter-content">
+            <view>地址：{{item.address}}</view>
+            <view>邮箱：{{item.email}}</view>
+            <view wx:if="{{item.isJudges}}">
+              身份:组委会成员
+            </view>
+            <view wx:else>
+              身份:选手
+              <view>报名状态：已报名2号赛事</view>
+            </view>        
+            </view>
+      </l-card>
+  </navigator>
+</view>
+
+
+

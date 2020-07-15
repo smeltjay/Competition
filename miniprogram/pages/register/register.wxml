@@ -1,0 +1,9 @@
+<!--pages/register/index.wxml-->
+<view>
+<i-input  bind:change='inputName' maxlength="15" title="账号" autofocus placeholder="请输入账号" />
+<i-input  bind:change='inputPassword' maxlength="15" title="密码" autofocus placeholder="请输入密码" />
+<i-input  bind:change='inputEmail' maxlength="15" title="邮箱" autofocus placeholder="请输入邮箱" />
+<i-input  bind:change='inputAddress' maxlength="15" title="地址" autofocus placeholder="请输入地址" />
+<i-button bindtap='registerContestants' type="success">我是选手</i-button>
+<i-button bindtap='registerJudges' type="success">我是评委</i-button>
+</view>

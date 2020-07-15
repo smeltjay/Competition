@@ -1,0 +1,28 @@
+   <l-card type="primary"
+          plaintext="{{true}}">
+    <view class="content">
+      <view class="first">
+        <view class="front">用户名:</view>
+        <input bindinput="nameInput" value="{{name}}"></input>
+      </view>
+      <view class="first">
+        <view class="front">邮箱:</view>
+        <view class="behind">
+        <input bindinput="emailInput" value="{{email}}"></input>
+        </view>
+      </view>
+      <view class="first">
+        <view class="front">地址:</view>
+        <view class="behind">
+        <input bindinput="addressInput" value="{{address}}"></input>
+        </view>
+      </view>
+      <view class="first">
+        <view class="front">已经报名赛事:</view>
+        <view class="behind">
+        {{cTest}}
+        </view>
+      </view>
+    </view>
+  </l-card>
+  <button bindtap="doUpdate">点击修改</button>

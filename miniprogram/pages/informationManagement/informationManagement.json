@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "修改信息",
+  "usingComponents": {
+    "l-list": "../../dist/list/index",
+    "i-button":"../../dist/button/index",
+    "l-card":"../../dist/card/index",
+    "l-input":"../../dist/input/index"
+  }
+}

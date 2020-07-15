@@ -1,0 +1,67 @@
+
+<!-- 幻灯片轮播图 -->
+<view>
+    <!--轮播图-->
+<swiper class='lunbo' indicator-dots='true' autoplay='true' interval='4000'>
+       <swiper-item> <image src='../../images/shanghai01.jpg'></image> </swiper-item>
+       <swiper-item> <image src='../../images/beijing.jpg'></image></swiper-item>
+       <swiper-item> <image src='../../images/suzhou.jpg'></image> </swiper-item>
+        <swiper-item> <image src='../../images/hangzhou.jpg'></image> </swiper-item>  
+       <swiper-item> <image src='../../images/xian.jpg'></image> </swiper-item> 
+      </swiper>
+</view>
+<navigator class="select-title" url="../../pages/getWeather/getWeather">今日天气</navigator>
+<!-- 作品列表 -->
+<view class="selected">
+        <view class="select-title" bindtap="goToArrangements"><text>赛事安排</text></view>
+        <view class="select-title" bindtap="goToTips"><text>温馨提醒</text></view>
+        <view class="select-title"><text>精选主题</text></view>
+        <view class="select-top">
+            <view class="select-top-small">
+                <navigator url="list/list">
+                    <image src="/images/c1.jpg"></image>
+                </navigator>
+            </view>
+            <view class="select-top-small">
+                <navigator url="list/list">
+                    <image src="/images/c2.jpg"></image>
+                </navigator>
+            </view>
+        </view>
+        <view class="select-bottom">
+            <navigator url="list/list">
+                <image src="/images/c3.jpg"></image>
+            </navigator>
+        </view>
+    </view>
+    <view class="newest">
+        <view class="newest-title"><text>最近</text></view>
+        <view class="newest-box">
+            <view class="newest-list">
+                <navigator url="details/details">
+                    <image src="/images/LGD.png"></image>
+                    <view class="newest-text"><text>LGD</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="details/details">
+                    <image src="/images/DMO.png"></image>
+                    <view class="newest-text"><text>DMO</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="details/details">
+                    <image src="/images/hangzhou.jpg"></image>
+                    <view class="newest-text"><text>HZ</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="details/details">
+                    <image src="/images/sn.png"></image>
+                    <view class="newest-text"><text>SN</text></view>
+
+                </navigator>
+            </view>
+
+        </view>
+</view>

@@ -1,0 +1,80 @@
+      <l-tabs>
+      <!-- 精选作品 -->
+        <l-tabpanel tab="精选" key="one" slot="one">
+          <view class="tab-content" >
+            <navigator url="../../pages/details/details?number={{newList[1].number}}">
+              <l-card type="primary" 
+                image="{{newList[1].path}}"
+                title="作品名：{{newList[1].workName}}">
+                <!-- 此处为content -->
+                <view class="content">
+                  <view>选手：{{newList[1].studentName}}</view>
+                  <view>学校：{{newList[1].schoolName}}</view>          
+                  <view>作品特色：{{newList[1].workStyle}}</view>  
+                </view>
+
+              </l-card>
+
+            </navigator>
+            <navigator url="../../pages/details/details?number={{newList[2].number}}">
+              <l-card type="primary" 
+                      image="{{newList[2].path}}"
+                      title="作品名：{{newList[2].workName}}">
+                  <!-- 此处为content -->
+                  <view class="content">
+                    <view>选手：{{newList[2].studentName}}</view>
+                    <view>学校：{{newList[2].schoolName}}</view>          
+                    <view>作品特色：{{newList[2].workStyle}}</view>  
+                  </view>
+              </l-card> 
+            </navigator>
+
+          </view>
+        </l-tabpanel>
+        <!-- 全部作品 -->
+        <l-tabpanel tab="全部" key="two" slot="two">
+          <view class="tab-content">
+            <l-tabs>
+              <block wx:for="{{testList}}" wx:key="_id" wx:for-item="i">
+              <l-tabpanel tab="{{i.name}}" key="{{i.number}}" slot="{{i.number}}">
+                <view class="tab-content" wx:for="{{newList}}" wx:key="_id">
+                  <block wx:if="{{item.workType === i.number}}">
+                    <navigator url="../../pages/details/details?number={{item.number}}">
+                    <l-card type="primary" 
+                        image="{{item.path}}"
+                        title="作品名：{{item.workName}}" >
+                        <!-- 此处为content -->
+                        <view class="content">    
+                          <view>选手：{{item.studentName}}</view>
+                          <view>学校：{{item.schoolName}}</view>          
+                          <view>作品类别：{{item.workType}}</view>          
+                        </view>
+                      </l-card>
+                    </navigator>
+                  </block>
+                </view>
+              </l-tabpanel>
+              </block>
+              
+            </l-tabs>
+            
+            </view>
+        </l-tabpanel>
+        <!-- 往期作品 -->
+        <l-tabpanel tab="往期作品" key="three" slot="three">
+          <view class="tab-content" wx:for="{{oldList}}" wx:key="_id">
+          <navigator url="../../pages/formerDetails/formerDetails?number={{item.number}}">
+             <l-card type="primary" 
+                image="{{item.ids}}"
+                title="作品名：{{item.workName}}" >
+                <!-- 此处为content -->
+                <view class="content">    
+                  <view>选手：{{item.studentName}}</view>
+                  <view>学校：{{item.schoolName}}</view>          
+                  <view>作品类别：{{item.workType}}</view>          
+                </view>
+              </l-card>
+            </navigator>
+            </view>
+        </l-tabpanel>
+      </l-tabs>

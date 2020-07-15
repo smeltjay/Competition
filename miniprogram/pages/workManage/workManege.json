@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "作品管理",
+  "usingComponents": {
+    "l-list": "../../dist/list/index",
+    "l-tabs": "../../dist/tabs/index",
+    "l-tabpanel": "../../dist/tabpanel/index",
+    "l-card":"../../dist/card/index"
+  }
+}

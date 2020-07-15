@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "作品评论",
+  "usingComponents": {
+    "l-textarea":"../../dist/textarea/index",
+    "l-input":"../../dist/input/index",
+    "i-button":"../../dist/buttons/index",
+    "i-input":"../../dist/inputs/index"
+  }
+}

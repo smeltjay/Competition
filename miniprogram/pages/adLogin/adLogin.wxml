@@ -1,0 +1,6 @@
+<view>
+      <i-input bind:change='inputName' maxlength="15" title="账号" placeholder="请输入账号" />
+      <i-input bind:change='inputPassword' type="password" maxlength="15" title="密码"  placeholder="请输入密码" />
+      <i-button bindtap='administratorsLogin' type="primary">登录</i-button>
+</view>
+

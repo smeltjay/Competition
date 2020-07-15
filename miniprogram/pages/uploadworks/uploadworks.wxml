@@ -1,0 +1,11 @@
+<view>
+
+   <i-input bind:change='inputWorkName' maxlength="15" title="作品名" placeholder="请输入作品名" />
+    <i-input bind:change='inputStudentName' maxlength="15" title="学生"  placeholder="请输入选手姓名" />
+    <i-input bind:change='inputSchoolName' maxlength="15" title="学校"  placeholder="请输入学校" />
+    <i-input bind:change='inputWorkStyle' maxlength="15" title="作品简介"  placeholder="请输入作品特色" />
+    <i-input bind:change='inputWorkType' maxlength="15" title="赛事编号"  placeholder="请输入赛事编号" />
+    <image src="../../images/pic.jpg" bindtap="uploadImage"></image>
+    <button bindtap="uploadfile">选择附件</button>
+    <i-button bindtap='commitInformation' type="primary">提交</i-button>
+</view>

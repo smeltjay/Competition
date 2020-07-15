@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="box">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+  <view class="buttons">
+    <button bindtap="chartA">A类作品成绩</button>
+    <button bindtap="chartB">B类作品成绩</button>
+  </view>
+    <view class="buttons">
+    <button bindtap="chartC">C类作品成绩</button>
+    <button type="primary">D类作品成绩</button>
+  </view>
+  
+</view>

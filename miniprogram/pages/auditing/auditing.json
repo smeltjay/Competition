@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "成绩审核",
+  "usingComponents": {
+    "l-list": "../../dist/list/index",
+    "i-button":"../../dist/button/index",
+    "l-card":"../../dist/card/index"
+  }
+}

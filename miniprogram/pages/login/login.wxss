@@ -1,0 +1,18 @@
+.all{
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  width: fit-content;
+  justify-content: flex-end;
+
+
+}
+.administrator{
+  display: flex;
+
+  
+}
+.administrator image{
+  width: 70rpx;
+  height: 70rpx;
+}

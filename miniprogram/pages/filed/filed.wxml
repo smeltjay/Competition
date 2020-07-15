@@ -1,0 +1,37 @@
+<navigator url="../../pages/map/map" class="top">地图导航</navigator>
+  <l-card  type="primary" 
+           l-img-class="right-card" 
+           position="left" 
+           image="/images/beijing.jpg">
+    <view class="content">
+    北京JDG主场场馆：北京·JDG电子竞技中心
+    场馆地址：北京市朝阳区定福庄西里2号院24H·齿轮场文创园5号楼
+    </view>
+  </l-card>
+  <l-card  type="primary" 
+           l-img-class="right-card" 
+           position="left" 
+           image="/images/shanghai01.jpg">
+    <view class="content">
+      上海主场场馆：虹桥天地演艺中心
+      场馆地址：上海市闵行区绍虹路33号3楼虹桥天地演艺中心
+    </view>
+  </l-card>
+    <l-card  type="primary" 
+           l-img-class="right-card" 
+           position="left" 
+           image="/images/hangzhou.jpg">
+    <view class="content">
+      杭州LGD主场场馆：LGD杭州电竞馆
+      场馆地址：杭州市下城区康宁街80号电竞数娱小镇E座501
+    </view>
+  </l-card>
+    <l-card  type="primary" 
+           l-img-class="right-card" 
+           position="left" 
+           image="/images/xian.jpg">
+    <view class="content">
+      西安WE主场场馆：西安广电大剧院
+      场馆地址：西安市曲江新区芙蓉西路91号
+    </view>
+  </l-card>

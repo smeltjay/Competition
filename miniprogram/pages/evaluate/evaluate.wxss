@@ -1,0 +1,22 @@
+/* miniprogram/pages/evaluate/evaluate.wxss */
+.all{
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx;
+}
+.top_label{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10rpx 10rpx 20rpx 10rpx;
+}
+.comment_time{
+  font-size: small;
+  color:#BDBDBD;
+}
+.comment{
+  display: flex;
+  flex-direction: row;
+  pad: 10rpx;
+  border-bottom: #BDBDBD solid 1rpx;
+}

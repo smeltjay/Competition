@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "l-input":"../../dist/input/index",
+    "i-button":"../../dist/buttons/index",
+    "i-input":"../../dist/inputs/index"
+  }
+}
